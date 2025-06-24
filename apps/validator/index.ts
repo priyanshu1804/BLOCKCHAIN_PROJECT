@@ -9,8 +9,6 @@ const CALLBACKS: {[callbackId: string]: (data: SignupOutgoingMessage) => void} =
 let validatorId: string | null = null;
 
 async function main() {
-
-// Decode Base58-encoded secret key
     const keypair = Keypair.fromSecretKey(
         bs58.decode(process.env.PRIVATE_KEY!)
     );

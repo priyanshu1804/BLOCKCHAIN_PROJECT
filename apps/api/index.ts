@@ -78,6 +78,6 @@ app.delete('/api/v1/website/',authMiddleware,async(req,res)=>{
     })
 })
 
-app.listen(8081, () => {
+app.listen(5000, () => {
     console.log('Server is running on port 8080');
 });
